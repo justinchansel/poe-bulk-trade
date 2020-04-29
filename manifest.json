@@ -1,0 +1,20 @@
+{
+  "name": "POE Bulk Sort",
+  "description": "An extension for sorting by similar sellers",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.pathofexile.com/trade/search/*"
+      ],
+      "js": ["js/lib/jquery.js", "js/lib/underscore.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "main.js",
+    "util.js"
+  ],
+  "manifest_version": 2,
+  "default_locale": "en"
+}
